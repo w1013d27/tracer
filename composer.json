@@ -2,6 +2,13 @@
     "name": "hyperf/tracer",
     "description": "A open tracing system implemented for Hyperf or other coroutine framework",
     "license": "MIT",
+    "repositories":[
+        {
+            "url":"https://github.com/w1013d27/zipkin-php-opentracing.git",
+            "type":"git"
+        }
+      
+        ],
     "keywords": [
         "php",
         "hyperf",
@@ -23,7 +30,7 @@
         "hyperf/guzzle": "~2.2.0",
         "hyperf/utils": "~2.2.0",
         "jcchavezs/zipkin-opentracing":"^1.0",
-        "opentracing/opentracing":"^1.0"
+        "opentracing/opentracing":"*"
     },
     "suggest": {
         "hyperf/event": "Required to use DbQueryExecutedListener.",
